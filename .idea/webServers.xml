@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4328990e-cb7e-422a-98d7-31196b39dbc1" name="personal-mixyours" url="http://webdev.cse.msu.edu/~youngsgr/mixyours">
+        <fileTransfer host="arctic.cse.msu.edu" port="22" rootFolder="/user/youngsgr/classweb/mixyours" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
