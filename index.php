@@ -1,6 +1,5 @@
 <?php
-$site = new \MixYours\Site();
-$site->setEmail("youngsgr@cse.msu.edu");
+require __DIR__ . '/lib/site.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +11,6 @@ $site->setEmail("youngsgr@cse.msu.edu");
 <body>
     <h1>Welcome to MixYours</h1>
     <p><a href="#">Login</a></p>
-    <?php echo "<p>" . $site->getEmail() . "</p>"; ?>
+    <?php echo "<p>" . $site->getEmail() . " ". $site->getRoot() . "</p>"; ?>
 </body>
 </html>
