@@ -26,22 +26,6 @@ class Site
     }
 
     /**
-     * Returns the Site root
-     * @return string
-     */
-    public function getRoot() {
-        return $this->root;
-    }
-
-    /**
-     * Returns the database table prefix
-     * @return string
-     */
-    public function getTablePrefix() {
-        return $this->tablePrefix;
-    }
-
-    /**
      * Sets the email address of the Site
      * @param string $email
      */
@@ -50,11 +34,27 @@ class Site
     }
 
     /**
+     * Returns the Site root
+     * @return string
+     */
+    public function getRoot() {
+        return $this->root;
+    }
+
+    /**
      * Sets the root path of the Site
      * @param string $root
      */
     public function setRoot($root) {
         $this->root = $root;
+    }
+
+    /**
+     * Returns the database table prefix
+     * @return string
+     */
+    public function getTablePrefix() {
+        return $this->tablePrefix;
     }
 
     /**
