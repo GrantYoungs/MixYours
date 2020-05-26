@@ -10,7 +10,19 @@ require __DIR__ . '/lib/site.inc.php';
 
 <body>
     <h1>Welcome to MixYours</h1>
-    <p><a href="#">Login</a></p>
     <?php echo "<p>" . $site->getEmail() . "</p>"; ?>
+    <form method="post" action="post/login.php">
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Email">
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="password">
+        </p>
+        <p>
+            <input type="submit" value="Log in">
+        </p>
+    </form>
 </body>
 </html>
