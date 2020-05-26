@@ -11,3 +11,10 @@ $localize = require 'localize.inc.php';
 if(is_callable($localize)) {
     $localize($site);
 }
+
+// Start the PHP session chain
+session_start();
+$user = null;
+if(isset($_SESSION[MixYours\User::SESSION_NAME])) {
+    $user = $_SESSION[MixYours\User::SESSION_NAME];
+}

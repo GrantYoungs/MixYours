@@ -1,3 +1,5 @@
 <?php
-echo "Email: " . $_POST['email'] . "<br>";
-echo "Password: " . $_POST['password'] . "<br>";
+require '../lib/site.inc.php';
+
+$controller = new MixYours\LoginController($site, $_SESSION, $_POST);
+header("location: " . $controller->getRedirect());
