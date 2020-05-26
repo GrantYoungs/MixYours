@@ -11,6 +11,6 @@ require __DIR__ . '/lib/site.inc.php';
 <body>
     <h1>Welcome to MixYours</h1>
     <p><a href="#">Login</a></p>
-    <?php echo "<p>" . $site->getEmail() . " ". $site->getRoot() . "</p>"; ?>
+    <?php echo "<p>" . $site->getEmail() . "</p>"; ?>
 </body>
 </html>
