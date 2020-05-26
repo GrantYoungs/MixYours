@@ -26,7 +26,6 @@ class LoginController extends Controller {
         if($user === null) {
             // Login failed, redirect the user back to the login page
             $this->redirect = "$root/index.php?e";  ///// DEFINITELY NEED TO CHANGE THIS TO THE APPROPRIATE PAGE WHEN DONE
-            $session['e'] = "Invalid login credentials";
         }
         else {
             $this->redirect = "$root/goodlogin.php";

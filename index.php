@@ -20,8 +20,8 @@ require __DIR__ . '/lib/site.inc.php';
             <label for="password">Password: </label>
             <input type="password" name="password" placeholder="password">
         </p>
-        <?php if(isset($_SESSION['e'])) {
-            echo "<p>" . $_SESSION['e'] . "</p>";
+        <?php if(isset($_GET['e'])) {
+            echo "<p>Invalid Login Credentials</p>";
         } ?>
         <p>
             <input type="submit" value="Log in">
