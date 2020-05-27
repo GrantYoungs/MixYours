@@ -13,5 +13,6 @@ $user = $_SESSION[MixYours\User::SESSION_NAME];
 <body>
     <h1>Welcome to MixYours</h1>
     <?php echo "<p>Welcome " . $user->getName() . "</p>"; ?>
+    <p><a href="post/logout.php">Logout</a></p>
 </body>
 </html>
